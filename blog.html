@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Canadian Dividend Calculator Blog - Expert insights on dividend taxation, financial planning, and investment strategies for Canadian employers and investors.">
+    <meta name="keywords" content="dividend blog, Canadian tax, dividend taxation, financial planning, investment strategies">
+    <meta name="author" content="Static Ventures Media">
+    <title>Blog - Canadian Dividend Calculator | Expert Financial Insights</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-primary {
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+        }
+        
+        .gradient-accent {
+            background: linear-gradient(135deg, #4A90E2 0%, #357ABD 100%);
+        }
+        
+        .card-hover {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .btn-primary {
+            transition: all 300ms ease-out;
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+            box-shadow: 0 10px 30px rgba(74, 144, 226, 0.3);
+        }
+        
+        .btn-primary:active {
+            transform: scale(0.98);
+        }
+        
+        .faq-icon {
+            transition: transform 300ms ease-out;
+        }
+        
+        .faq-icon.rotate-180 {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            transition: all 300ms ease-out;
+            max-height: 500px;
+            overflow: hidden;
+        }
+        
+        .faq-answer.hidden {
+            max-height: 0;
+            opacity: 0;
+        }
+        
+        .testimonial-card {
+            transition: all 300ms ease-out;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        .feature-icon {
+            transition: all 300ms ease-out;
+        }
+        
+        .feature-icon:hover {
+            transform: scale(1.1);
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu {
+                transition: all 300ms ease-out;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-black">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-8 md:px-16 py-6 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-gradient-accent rounded-full flex items-center justify-center">
+                    <i class="fas fa-calculator text-white text-lg"></i>
+                </div>
+                <a href="https://staticventures.github.io/canadian-dividend-calculator-2025-11-19-lcm5s" class="text-2xl font-bold text-black hover:text-blue-600 transition-colors duration-300">DividendCalc</a>
+            </div>
+            
+            <a href="https://staticventures.github.io/canadian-dividend-calculator-2025-11-19-lcm5s" class="text-black font-medium hover:text-blue-600 transition-colors duration-300">← Back</a>
+        </nav>
+    </header>
+
+    <!-- Blog Hero Section -->
+    <section class="bg-white py-20 md:py-32 px-8 md:px-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-black mb-6 tracking-tight">
+                    Our Blog
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-700 font-medium max-w-3xl mx-auto">
+                    Expert insights, financial strategies, and practical guides for Canadian dividend investors
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Purpose Section -->
+    <section class="bg-gray-50 py-16 md:py-24 px-8 md:px-16">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white p-10 md:p-12 rounded-2xl shadow-lg border border-gray-100">
+                <h2 class="text-3xl md:text-4xl font-bold text-black mb-6">Welcome to Our Financial Blog</h2>
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    At DividendCalc, we believe that informed financial decisions lead to better outcomes. Our blog is dedicated to providing Canadian employers, investors, and financial professionals with comprehensive, actionable insights into dividend taxation, investment strategies, and wealth optimization.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    Whether you're just beginning your dividend investment journey or you're an experienced portfolio manager, you'll find valuable content that breaks down complex tax concepts, explores provincial variations, and reveals strategies to maximize your after-tax returns.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+                    <div class="flex flex-col gap-3">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C6.5 6.253 2 10.998 2 17s4.5 10.747 10 10.747c5.5 0 10-4.998 10-10.747S17.5 6.253 12 6.253z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-black text-lg">Tax Strategies</h3>
+                        <p class="text-gray-600">Proven techniques to minimize tax liability and maximize your net dividend income.</p>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-black text-lg">Investment Insights</h3>
+                        <p class="text-gray-600">Analysis of dividend trends, market opportunities, and portfolio optimization techniques.</p>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-black text-lg">Planning Guides</h3>
+                        <p class="text-gray-600">Step-by-step guides to help you plan, calculate, and optimize your dividend strategy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Blog Post -->
+    <section class="bg-white py-20 md:py-32 px-8 md:px-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-black mb-12 tracking-tight">Featured Article</h2>
+            </div>
+            
+            <div class="card-hover bg-white p-10 md:p-12 rounded-2xl shadow-lg border border-gray-100">
+                <div class="mb-6">
+                    <span class="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold">Latest</span>
+                </div>
+                
+                <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6 leading-tight">
+                    Complete Guide to Canadian Dividend Taxation and Tax Credits
+                </h3>
+                
+                <div class="flex items-center gap-4 mb-8 pb-8 border-b border-gray-200">
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                        <span class="text-gray-600 font-medium">November 19, 2025</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C6.5 6.253 2 10.998 2 17s4.5 10.747 10 10.747c5.5 0 10-4.998 10-10.747S17.5 6.253 12 6.253z"></path>
+                        </svg>
+                        <span class="text-gray-600 font-medium">8 min read</span>
+                    </div>
+                </div>
+                
+                <div class="prose prose-lg max-w-none mb-10">
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        <strong>Canadian Dividend Taxation Summary</strong>
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        Canada's dividend taxation system offers significant wealth-building opportunities through strategic planning. Dividends receive preferential tax treatment via gross-up mechanisms and dividend tax credits, varying between eligible and non-eligible types. Your effective tax rate depends on province, income level, and dividend classification. The system prevents double taxation at corporate and personal levels.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        Key optimization strategies include maximizing registered accounts (TFSAs and RRSPs), income splitting with spouses, and timing distributions strategically. Provincial variations create substantial differences—Alberta offers favorable rates while Quebec imposes higher burdens. Understanding these nuances and using specialized calculators enables investors to minimize tax liability and maximize after-tax returns significantly.
+                    </p>
+                </div>
+                
+                <a href="https://staticventures.github.io/canadian-dividend-calculator-2025-11-19-lcm5s/blog/complete-guide-to-canadian-dividend-taxation-and-t.html" class="btn-primary inline-block bg-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-lg">
+                    Read Full Article →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="bg-gray-50 py-20 md:py-32 px-8 md:px-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-black mb-6 tracking-tight">More Articles Coming Soon</h2>
+                <p class="text-xl text-gray-600 font-medium">
+                    We're constantly creating new content to help you optimize your dividend strategy. Check back soon for more expert insights.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16">
+                <!-- Placeholder Post 1 -->
+                <div class="card-hover bg-white p-10 md:p-12 rounded-2xl shadow-lg border border-gray-100 opacity-50">
+                    <div class="mb-6 h-48 bg-gradient-to-br from-blue-100 to-blue-50 rounded-xl flex items-center justify-center">
+                        <svg class="w-16 h-16 text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C6.5 6.253 2 10.998 2 17s4.5 10.747 10 10.747c5.5 0 10-4.998 10-10.747S17.5 6.253 12 6.253z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-black mb-4">Coming Soon</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        New article content is being prepared to provide you with valuable insights.
+                    </p>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                        <span class="text-gray-400 font-medium">Coming Soon</span>
+                    </div>
+                </div>
+                
+                <!-- Placeholder Post 2 -->
+                <div class="card-hover bg-white p-10 md:p-12 rounded-2xl shadow-lg border border-gray-100 opacity-50">
+                    <div class="mb-6 h-48 bg-gradient-to-br from-blue-100 to-blue-50 rounded-xl flex items-center justify-center">
+                        <svg class="w-16 h-16 text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C6.5 6.253 2 10.998 2 17s4.5 10.747 10 10.747c5.5 0 10-4.998 10-10.747S17.5 6.253 12 6.253z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-black mb-4">Coming Soon</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        New article content is being prepared to provide you with valuable insights.
+                    </p>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                        <span class="text-gray-400 font-medium">Coming Soon</span>
+                    </div>
+                </div>
+                
+                <!-- Placeholder Post 3 -->
+                <div class="card-hover bg-white p-10 md:p-12 rounded-2xl shadow-lg border border-gray-100 opacity-50">
+                    <div class="mb-6 h-48 bg-gradient-to-br from-blue-100 to-blue-50 rounded-xl flex items-center justify-center">
+                        <svg class="w-16 h-16 text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C6.5 6.253 2 10.998 2 17s4.5 10.747 10 10.747c5.5 0 10-4.998 10-10.747S17.5 6.253 12 6.253z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-black mb-4">Coming Soon</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        New article content is being prepared to provide you with valuable insights.
+                    </p>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                        <span class="text-gray-400 font-medium">Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-gradient-accent py-20 md:py-32 px-8 md:px-16 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="dots" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <circle cx="20" cy="20" r="2" fill="white"/>
+                    </pattern>
+                </defs>
+                <rect width="400" height="400" fill="url(#dots)" />
+            </svg>
+        </div>
+        
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight">
+                Ready to Optimize Your Dividends?
+            </h2>
+            <p class="text-xl md:text-2xl text-blue-100 mb-12 font-medium">
+                Use our powerful calculator to get accurate, instant dividend calculations and tax estimates
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <a href="https://staticventures.github.io/canadian-dividend-calculator-2025-11-19-lcm5s" class="btn-primary bg-white text-blue-600 px-10 py-4 rounded-full font-bold text-lg hover:shadow-lg text-center">
+                    Start Calculating Now
+                </a>
+                <a href="https://staticventures.github.io/canadian-dividend-calculator-2025-11-19-lcm5s" class="btn-primary border-2 border-white text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-blue-700 transition-all duration-300 text-center">
+                    Back to Calculator
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-16 md:py-24 px-8 md:px-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-16 mb-16">
+                <!-- Brand Column -->
+                <div class="flex flex-col gap-6">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
+                            <i class="fas fa-calculator text-white text-lg"></i>
+                        </div>
+                        <span class="text-2xl font-bold">DividendCalc</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        Canada's most trusted dividend calculator. Making financial planning simple, accurate, and accessible for everyone.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+                            <i class="fab fa-facebook-f text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+                            <i class="fab fa-linkedin-in text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Product Column -->
+                <div class="flex flex-col gap-6">
+                    <h3 class="text-lg font-bold">Product</h3>
+                    <ul class="flex flex-col gap-3">
+                        <li><a href="https://staticventures.github.io/canadian-dividend-calculator-2025-11-19-lcm5s#features" class="text-gray-400 hover:text-white transition-colors duration-300 font-medium">Features</a></li>
+                        <li><a href="https://staticventures.github.io/canadian-dividend-calculator-2025-11-19-lcm5s#benefits" class="text-gray-400 hover:text-white transition-colors duration-300 font-medium">Benefits</a></li>
+                        <li><a href="https://staticventures.github.io/canadian-dividend-calculator-2025-11-19-lcm5s" class="text-gray-400 hover:text-white transition-colors duration-300 font-medium">Calculator</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 font-medium">Pricing</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Company Column -->
+                <div class="flex flex-col gap-6">
+                    <h3 class="text-lg font-bold">Company</h3>
+                    <ul class="flex flex-col gap-3">
+                        <li><a href="https://staticventures.github.io/canadian-dividend-calculator-2025-11-19-lcm5s#about" class="text-gray-400 hover:text-white transition-colors duration-300 font-medium">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 font-medium">Blog</a></li>
+                        <li><a href="https://staticventures.github.io/canadian-dividend-calculator-2025-11-19-lcm5s#contact" class="text-gray-400 hover:text-white transition-colors duration-300 font-medium">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 font-medium">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Legal Column -->
+                <div class="flex flex-col gap-6">
+                    <h3 class="text-lg font-bold">Legal</h3>
+                    <ul class="flex flex-col gap-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 font-medium">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 font-medium">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 font-medium">Cookie Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 font-medium">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Divider -->
+            <div class="border-t border-gray-800 pt-12">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                    <p class="text-gray-400 font-medium">
+                        &copy; 2025 DividendCalc. All rights reserved.
+                    </p>
+                    <div class="flex gap-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 font-medium">Privacy</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 font-medium">Terms</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 font-medium">Blog</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="mt-12 pt-12 border-t border-gray-800">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        <a href="mailto:staticventuresmedia@gmail.com" class="text-gray-400 hover:text-white transition-colors duration-300 font-medium">staticventuresmedia@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
